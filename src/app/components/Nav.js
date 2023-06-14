@@ -12,7 +12,7 @@ export default function Nav () {
     }
 
     return (
-        <nav className='w-screen flex flex-col'>
+        <nav className='w-screen flex flex-col justify-end h-fit'>
             <div className='text-5xl flex justify-end m-4'>
                 <button onClick={toggleMenu}>
                     <FaBars />
