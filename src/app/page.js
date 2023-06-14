@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
     <Nav />
-      <main className='font-serif bg-gradient-to-b from-purple-900/50'>
+      <main className='font-mono bg-gradient-to-b from-purple-900/50 px-10'>
         <div className='sm:flex items-center'>
-          <div className='flex flex-col items-center sm:w-1/2 my-10'>
+          <div className='flex flex-col items-center sm:w-full my-10'>
             <h1 className='text-5xl text-center'>Kelly Caldwell and <span className='block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500'>Kashmere</span></h1>
             <Image
               className='rounded-full my-4 shadow-xl' 
@@ -17,21 +17,32 @@ export default function Home() {
               height={500}
             />
           </div>
-          <div className='font-roboto mx-8 sm:w-1/2 p-10 text-center outline outline-double outline-pink-500/50 rounded-xl shadow-xl bg-white/20'>
-            <span className='my-10 text-xl'>Kashmere, an electrifying 8-11 piece show band, has been captivating audiences for nearly five years with their exceptional renditions of 80's rock classics. Drawing standing-room-only crowds at Lexington hotspots like Banners, Proud Mary, and more, as well as enthralling festival-goers throughout Kentucky, Kashmere is truly a force to be reckoned with.</span>
-          </div>
         </div>
         <div className='flex justify-between'>
           <Image
-            className='h-72 '
+            className=''
             src="/./image/family.jpg"
             width={500}
             height={500}
           />
-          <div className="max-w-screen-sm my-10 mx-8 rounded-xl">
+          <div className="max-w-screen-sm my-10 mx-8">
             <TextCard
               text="Kashmere, an electrifying 8-11 piece show band, has been captivating audiences for nearly five years with their exceptional renditions of 80's rock classics. Drawing standing-room-only crowds at Lexington hotspots like Banners, Proud Mary, and more, as well as enthralling festival-goers throughout Kentucky, Kashmere is truly a force to be reckoned with."
               bgColor="purple"
+            />
+          </div>
+        </div>
+        <div className='md:flex flex-row-reverse justify-between items-center my-32'>
+          <Image 
+            className=''
+            src="/./image/sideways.jpg"
+            width={500}
+            height={500}  
+          />
+          <div className="max-w-screen-sm my-10 mx-8">
+            <TextCard
+            text="Distinctly set apart by their phenomenal female lead, Kelly Caldwell, the band delivers album-quality music that leaves listeners spellbound. Kelly's powerful, pitch-perfect vocals are just the tip of the iceberg, as she's also a versatile multi-instrumentalist. Seamlessly transitioning from rhythm and bass guitar to trumpet, sax, and occasionally keys, Kelly brings an extraordinary level of talent to the stage. Complementing her prowess is a superb lineup of musicians, featuring a dazzling five-piece horn section."
+            bgColor="pink"
             />
           </div>
         </div>

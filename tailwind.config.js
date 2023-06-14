@@ -7,7 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:['var(---font-roboto)'],
+      fontFamily: {
+        sans: ['var(--font-roboto)'],
+        mono: ['var(--font-playfair)']
+      },
     },
   },
   plugins: [],

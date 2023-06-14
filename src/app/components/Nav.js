@@ -1,6 +1,6 @@
 'use client'
 
-import { FaBars, FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaBars, FaFacebook, FaInstagram, FaRegEnvelope } from 'react-icons/fa'
 import { useState } from 'react'
 
 export default function Nav () {
@@ -19,11 +19,11 @@ export default function Nav () {
                 </button>
             </div>
             <div className='flex justify-end text-5xl sticky'>
-                <div className={`bg-purple-500/90 fixed p-10 flex-grow ${menu ? 'visible' : 'hidden'}`}>
+                <div className={`bg-purple-500/50 fixed p-10 flex-grow ${menu ? 'visible' : 'hidden'}`}>
                     <ul className='flex flex-col justify-between items-center'>
-                        <li><a href="https://www.facebook.com/ShindigPro"><FaFacebook/></a></li>
-                        <li><a href="https://www.instagram.com/shindigproductions/"><FaInstagram/></a></li>
-                        <li>Menu Item 3</li>
+                        <li className='my-4'><a href="https://www.facebook.com/ShindigPro"><FaFacebook/></a></li>
+                        <li className='my-4'><a href="https://www.instagram.com/shindigproductions/"><FaInstagram/></a></li>
+                        <li className='my-4'><a href="mailto:tegevans@icloud.com"><FaRegEnvelope /></a></li>
                     </ul>
                 </div>
             </div>
