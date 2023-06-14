@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className='text-5xl text-center'>Kelly Caldwell and <span className='block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500'>Kashmere</span></h1>
             <Image
               className='rounded-full my-4 shadow-xl' 
-              src="/./image/direct.jpg"
+              src="/image/direct.jpg"
               width={500}
               height={500}
             />
@@ -21,7 +21,7 @@ export default function Home() {
         <div className='flex justify-between'>
           <Image
             className=''
-            src="/./image/family.jpg"
+            src="/image/family.jpg"
             width={500}
             height={500}
           />
@@ -35,7 +35,7 @@ export default function Home() {
         <div className='md:flex flex-row-reverse justify-between items-center my-32'>
           <Image 
             className=''
-            src="/./image/sideways.jpg"
+            src="/image/sideways.jpg"
             width={500}
             height={500}  
           />
