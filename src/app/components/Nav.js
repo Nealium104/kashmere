@@ -12,20 +12,12 @@ export default function Nav () {
     }
 
     return (
-        <nav className='w-screen flex flex-col justify-end h-fit'>
-            <div className='text-5xl flex justify-end m-4'>
-                <button onClick={toggleMenu}>
-                    <FaBars />
-                </button>
-            </div>
-            <div className='flex justify-end text-5xl sticky'>
-                <div className={`bg-purple-500/50 fixed p-10 flex-grow ${menu ? 'visible' : 'hidden'}`}>
-                    <ul className='flex flex-col justify-between items-center'>
-                        <li className='my-4'><a href="https://www.facebook.com/ShindigPro"><FaFacebook/></a></li>
-                        <li className='my-4'><a href="https://www.instagram.com/shindigproductions/"><FaInstagram/></a></li>
-                        <li className='my-4'><a href="mailto:tegevans@icloud.com"><FaRegEnvelope /></a></li>
-                    </ul>
-                </div>
+        <nav className='w-screen flex justify-end h-20'>
+            <div className='flex items-center justify-evenly text-3xl w-2/3 md:w-1/3 sticky'>
+                <span className='font-bold block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500'>KCK</span>
+                <a className="transition duration-150 hover:scale-110 hover:text-pink-500" href="https://www.facebook.com/ShindigPro"><FaFacebook /></a>
+                <a className="transition duration-150 hover:scale-110 hover:text-pink-500" href="https://www.instagram.com/shindigproductions/"><FaInstagram /></a>
+                <a className="transition duration-150 hover:scale-110 hover:text-pink-500" href="mailto:tegevans@icloud.com"><FaRegEnvelope /></a>
             </div>
         </nav>
     )
